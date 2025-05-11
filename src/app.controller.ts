@@ -9,4 +9,9 @@ export class AppController {
   getHome(): { message: string } {
     return this.appService.getHome();
   }
+
+  @Get('ping')
+  getPing(): string {
+    return 'pong';
+  }
 }
